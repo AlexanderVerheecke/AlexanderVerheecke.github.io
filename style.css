@@ -126,6 +126,7 @@ nav ul li a:hover::after{
 }
 
 .tab-links{
+    /* The header of each section in about me: Eduction, Skills */
     margin-right: 50px;
     font-size: 15px;
     font-weight: 500;
@@ -133,6 +134,8 @@ nav ul li a:hover::after{
     position: relative;
 }
 
+
+/* The line underneath a selected header item */
 .tab-links::after{
     content: '';
     width: 0;
@@ -153,6 +156,8 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 
+
+/* the sub-header for each header in about me Section: Education -> 2021-2022; Skills -> Programming etc... */
 .tab-contents ul li span{
     color: #3a65ed;
     font-size: 14px;
@@ -164,6 +169,7 @@ nav ul li a:hover::after{
     /*  This hides all the content of tab-contens 
     so it can later be shown when section is chosen*/
     display: none;  
+    font-size: 16px;
 }
 
 .tab-contents.active-tab{
