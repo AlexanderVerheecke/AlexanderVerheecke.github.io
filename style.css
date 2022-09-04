@@ -497,3 +497,13 @@ nav .fa-sharp, nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
+
+.language{
+    /* background: #262626; */
+    /* background: #3a65ed; */
+    /* background: #D12612; */
+    background:#3a65ed;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
