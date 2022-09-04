@@ -1,0 +1,15 @@
+{
+    "RecentGrad": "Recent graduate & aspiring developer",
+    "Name": "Hi, I'm <span>Alex Verheecke</span> from Luxembourg",
+    "about-me-text": "I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Language and Linguistics. During the lockdown in March 2020, I began my journey in programming with the University of Helsinki's Java Programming MOOC.After graduating, I continued my education at the University of Birmingham, undertaking a postgraduate Computer Science course. Currently, I am writing my thesis on the influence of machine translation on sentiment. I am now actively searching for a job in Software Development.",
+    "tab-links active-link": "Education",
+    "tab-links": "Skills",
+    "Education 1":"<span>2021-22</span><br>MSc Computer Science - Univeristy of Birmingham",
+    "Education 2":"<span>2021-22</span><br>BA (Hons) English Language and Linguistics - University of York",
+    "Education 3":"<span>2016-18</span><br>Seconday Education - Advanced Level - Luxembourg",
+    "Education 4":"<span>2013-16</span><br>Technician in civil engineering - Luxembourg",
+    "Skills 1":"<span>Programming</span><br>Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "Skills 2":"<span>Linguistics</span><br>Luxembourgish, English, German, French ",
+    "Skills 3":"<span>Technical Competencies</span><br>JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "Twitter App Explanation": "This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag related tweets."
+}

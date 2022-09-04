@@ -1,0 +1,17 @@
+{
+    "RecentGrad": "Hochschulabsolvent & angehender Entwickler",
+    "Name": "Hallo, ich bin <span>Alex Verheecke</span> von Luxembourg",
+    "about-me-text": "2018 bin ich von Luxemburg nach Großbritannien umgezogen, um einen Bachelorabschluss in der Englischen Sprache und Linguistik zu studieren. Während des Lockdowns im März 2020 begann ich meine Reise in die Programmierung mit dem Java Programming MOOC der Universität von of Helsinki. Nach meinem Abschluss setzte ich meine Ausbildung an der Universität von Birmingham fort und absolvierte einen Masterabschluss in den Computerwissenschaften. Derzeit schreibe ich an meiner Dissertation über den Einfluss der maschinellen Übersetzung auf die Meinung eines Textes. Ich bin jetzt aktiv auf der Suche nach einem Job im Bereich Softwareentwicklung.",
+    "tab-links active-link": "Ausbildung",
+    "tab-links": "Kompetenzen",
+    "Education 1":"<span>2021-22</span><br>MSc Computerwissenschaft - Universität von Birmingham",
+    "Education 2":"<span>2021-22</span><br>BA (Hons) Englische Sprache and Linguistik - Universität von York",
+    "Education 3":"<span>2016-18</span><br>Sekundarschulbildung - Fortgeschrittene Stufe - Luxembourg",
+    "Education 4":"<span>2013-16</span><br>Techniker im Bauwesen - Luxembourg",
+    "Skills 1":"<span>Programmierung</span><br>Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "Skills 2":"<span>Sprachkenntnisse</span><br>Luxemburgish, Englisch, Deutsch, Französisch ",
+    "Skills 3":"<span>Technische Kompetenzen</span><br>JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "Twitter App Explanation": "Diese Webanwendung ermöglicht die Analyse der negativen, neutralen und positiven Meinungen von Tweets."
+}
+
+
