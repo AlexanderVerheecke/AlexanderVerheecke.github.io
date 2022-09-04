@@ -1,0 +1,208 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <title>Alexander Verheecke portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- This is the script to fontawseome to get nice icons later -->
+        <script src="https://kit.fontawesome.com/d1d65dc915.js" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+        <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/test logo better sized.png" class="logo" width="20%">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <!-- <li><a href="#">Services</a> </li> -->
+                    <li><a href="#portfolio">Portfolio</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p> Recent graduate & aspiring developer</p>
+                <h1>Hi, I'm <span>Alex Verheecke</span> <br>from Luxembourg</h1>
+            </div>
+        </div>
+        <!-- -------------about me section------------- -->
+        <div id="about">
+            <div class="container">
+                <!-- we want to create two columns, so we create a div row , then create two dives for columns-->
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/me_waterfall_solidbackground.png" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="about-me-text"> I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Languag and Linguistics. 
+                            During the lockdown in March 2020, I began my journey in programming with the University of Helsinki's Java Programming MOOC.
+                            After graduating, I continued my education at the University of Birmingham, undertaking a postgraduate Computer Science course. 
+                            Currently, I am writing my thesis on the influence of machine translation on sentiment. 
+                            I am now moving to Leeds and actively searching for a job in Software Development.
+                        </p>
+                        <div class="tab-titles">
+<!-- onclick event makes it so that an event happens when the user clicks. Currently Education automatically shown.
+When another section is clicked, that section will be shown.
+Function: onclick="opentab('ID of tab')"" -->
+
+                            <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Other')" >Tab for other information (TBD)</p>
+                            <!-- <p class="tab-links" onclick="opentab('XYZ')">XYZ</p> -->
+                        </div>
+
+                        <div class="tab-contents active-tab" id="Education">
+                            <!-- we assign an id to this div tab so we can pass it to onclick function to open this tab -->
+                            <ul>
+                                <li><span>2021-22</span><br>MSc Computer Science - Univeristy of Birmingham</li>
+                                <li><span>2018-21</span><br>BA (Hons) English Language and Linguistics - Univeristy of York</li>
+                                <li><span>2016-18</span><br>Seconday Education - Advanced Level - Luxembourg</li>
+                                <li><span>2013-16</span><br>Technician in civil engineering - Luxembourg</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents " id="Other">
+                            <!-- we assign an id to this div tab so we can pass it to onclick function to open this tab -->
+                            <ul>
+                                <li><span>TBD</span><br>TBD information</li>
+                                <li><span>TBD</span><br>TBD information</li>
+                                <li><span>TBD</span><br>TBD information</li>
+                                <li><span>TBD</span><br>TBD information</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------- Portfolio ------------ -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/my_work.png" width="100%">
+                        <div class="layer">
+                            <h3 class="Twitter">Twitter Sentiment Analysis </h3>
+                            <p>This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag related tweets.</p>
+                            <a href="https://alexanderverheecke-sentimentanalysisapp-main-jhis3e.streamlitapp.com/" class="icon" ><i class="fa-regular fa-square-up-right"></i></a>
+
+                        </div>
+                    </div>
+                    <!-- <div class="work">
+                        <img src="images/my_work.png" width="100%">
+                        <div class="layer">
+                            <h3>Twitter Sentiment Analysis</h3>
+                            <p>This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag related tweets.</p>
+                            <a href="https://alexanderverheecke-sentimentanalysisapp-main-jhis3e.streamlitapp.com/"class="testicon"><i class="fa-regular fa-square-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/my_work.png" width="100%">
+                        <div class="layer">
+                            <h3>Twitter Sentiment Analysis</h3>
+                            <p>This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag related tweets.</p>
+                            <a href="https://alexanderverheecke-sentimentanalysisapp-main-jhis3e.streamlitapp.com/"class="testicon"><i class="fa-regular fa-square-up-right"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <a href="https://alexanderverheecke-sentimentanalysisapp-main-jhis3e.streamlitapp.com/" class="testicon"><i class="fa-regular fa-square-up-right"></i></a> -->
+                <a href="#" class="btn">See more</a>
+
+            </div>
+        </div>
+
+<!-- ---------------- contact ----------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> alexander.verheecke@hotmail.com</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/verheecke/" ><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AlexanderVerheecke" ><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="/images/Alexander_Verheecke_CV.pdf" download class="button">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <!-- form creates a form fiels -->
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="8" placeholder="Your message"></textarea>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!--  ADDING JAVASCRIPT: so the onclick function works-->
+        <script>
+
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            // defining function opentab
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link"); // this will remove the active-link class of every active tab 
+                }
+            
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab"); // this will remove the active-tab class of every active tab 
+                }
+
+                // on event of clicking the current target tab, we add the tabname's active-tab to the list to be shown
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                // whenever rifht is 0, it will be visible
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxiQHatAiw9l5eatpFiSaplAxyUytuyvuCuQMHdvR7_WAk0zqpPquIguWCmOEbE_PFK4w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Your message has been send successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
