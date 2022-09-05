@@ -291,7 +291,7 @@ const jsonEN = {
     "_Home": "Home",
     "_About": "About",
     "_Portfolio": "Portfolio",
-    "_Contact": "Kontakt",
+    "_Contact": "Contact",
     "_RecentGrad": "Recent graduate & aspiring developer",
     "_Hello": "Hi, I'm",
     "_Name": "Alex Verheecke",
@@ -305,7 +305,7 @@ const jsonEN = {
     // "_BA":"2018-21",
     "_BA-details": "BA (Hons) English Language and Linguistics - University of York",
     // "_Secondary":"2020-21",
-    "_Secondary-details": "Seconday Education - Advanced Level - Luxembourg",
+    "_Secondary-details": "Secondary Education - Advanced Level - Luxembourg",
     // "_Civil":"2012-16",
     "_Civil-details": "Technician in civil engineering - Luxembourg",
     "_Programming":"Programming",
@@ -323,25 +323,65 @@ const jsonEN = {
 }
 
 
+const jsonFR = {
+    "_Home": "Page d'accueil",
+    "_About": "Sur moi",
+    "_Portfolio": "Portfolio",
+    "_Contact": "Prendre contact",
+    "_RecentGrad": "diplômé et développeur en herbe",
+    "_Hello": "Bonjour, je m'appelle",
+    "_Name": "Alex Verheecke",
+    "_Country" :"et je viens du Luxembourg.",
+    "_about-me": "Sur moi",
+    "_about-me-text": "J'ai déménagé du Luxembourg au Royaume-Uni en 2018 pour poursuivre un diplôme de premier cycle en langue anglaise et en linguistique. Pendant le confinement de mars 2020, j'ai commencé mon parcours de programmation avec le MOOC de programmation Java de l'Université d'Helsinki. Après avoir obtenu mon diplôme, j'ai poursuivi mes études à l'Université de Birmingham et entrepris un cours d'informatique de troisième cycle. J'ai mené mon projet de recherche de troisième cycle sur l'influence de la traduction automatique sur le sentiment. Je suis maintenant à la recherche active d'un emploi dans le domaine du développement logiciel.",
+    "_Education": "Éducation",
+    "_Skills": "Compétences",
+    // "_Master": "2021-22",
+    "_Master-details": "MSc Sciences informatiques - Université de Birmingham",
+    // "_BA":"2018-21",
+    "_BA-details": "BA (Hons) Langue anglaise et linguistique - Université de York",
+    // "_Secondary":"2020-21",
+    "_Secondary-details": "Enseignement secondaire - Niveau avancé - Luxembourg",
+    // "_Civil":"2012-16",
+    "_Civil-details": "Technicien en génie civil - Luxembourg",
+    "_Programming":"Programmation",
+    "_Programming-details":"Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "_Linguistics": "Linguistique",
+    "_Linguistics-details": "Luxembourgish, English, German, French ",
+    "_Technical": "Compétences techniques",
+    "_Technical-details": "JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "_My-work": "Mes oeuvres",
+    "_Twitter": "Analyse du sentiment sur Twitter",
+    "_Twitter-App-Explanation": "Cette application web permet d'analyser les sentiments négatifs, neutres et positifs des récents tweets liés à un hashtag.",
+    "_contact-me": "Contactez-moi",
+    "_Download": "Télécharger mon CV",
+    "_Submit": "Envoyer"
+}
+
 document.querySelector('#language').addEventListener("change", function() {
   if (this.value == "🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG") {
     // change all text to ENG
     for (let key in jsonEN) {
-      document.querySelector("#" + key + " a").textContent = jsonEN[key]
+      document.querySelector("#" + key).textContent = jsonEN[key]
       
     }
   } else if (this.value == "🇩🇪 DE") {
     // change all text to DE
     for (let key in jsonDE) {
-      document.querySelector("#" + key + " a").textContent = jsonDE[key]
+      document.querySelector("#" + key).textContent = jsonDE[key]
     }
-} 
-  else if (this.value == "🇱🇺 LUX") {
+} else if (this.value == "🇱🇺 LUX") {
     // change all text to DE
     for (let key in jsonDE) {
-      document.querySelector("#" + key + " a").textContent = jsonLUX[key]
+      document.querySelector("#" + key).textContent = jsonLUX[key]
     }
-}
+} 
+// else if (this.value == "🇫🇷 FR") {
+//     // change all text to DE
+//     for (let key in jsonDE) {
+//       document.querySelector("#" + key + " a").textContent = jsonFR[key]
+//     }
+// }
 });
     </script>    
     </body>
