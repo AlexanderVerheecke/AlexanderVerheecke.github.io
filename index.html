@@ -19,19 +19,19 @@
             <nav>
                 <img src="images/test logo better sized.png" class="logo" width="20%">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a> </li>
-                    <li><a href="#about">About</a> </li>
+                    <li id="Home" class="Home"><a href="#header">Home</a> </li>
+                    <li id="About" class="About"><a href="#about">About</a> </li>
                     <!-- <li><a href="#">Services</a> </li> -->
-                    <li><a href="#portfolio">Portfolio</a> </li>
-                    <li><a href="#contact">Contact</a> </li>
+                    <li id="Portfolio" class="Portfolio"><a href="#portfolio">Portfolio</a> </li>
+                    <li id="Contact" class="Contact"><a href="#contact">Contact</a> </li>
                     <!-- <li class="LanguageSet"><a href="#">Select Language</a> </li> -->
-                    <!-- <select id="language" class="language">
+                        <select id="language" class="language">
                         <option>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</option>
-                        <option>🇩🇪 DE</option> -->
+                        <option>🇩🇪 DE</option> 
                         <!-- <option>🇫🇷 FR</option> -->
                         <!-- <option>🇱🇺 LUX</option> -->
 
-                    <!-- </select> -->
+                    </select>
                     <li class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
                     
                 </ul>
@@ -39,8 +39,8 @@
                 
             </nav>
             <div class="header-text">
-                <p class="RecentGrad"> Recent graduate & aspiring developer</p>
-                <h1 class="Name">Hi, I'm <span>Alex Verheecke</span> from Luxembourg</h1>
+                <p id="RecentGrad" class="RecentGrad"> Recent graduate & aspiring developer</p>
+                <h1 id="Name" class="Name">Hi, I'm <span>Alex Verheecke</span> from Luxembourg</h1>
             </div>
         </div>
         <!-- -------------about me section------------- -->
@@ -52,8 +52,8 @@
                         <img src="images/me_waterfall_solidbackground.png" >
                     </div>
                     <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p class="about-me-text"> I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Language and Linguistics. 
+                        <h1 id="about-me" class="about-me">About Me</h1>
+                        <p id="about-me-text" class="about-me-text"> I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Language and Linguistics. 
                             During the lockdown in March 2020, I began my journey in programming with the University of Helsinki's Java Programming MOOC.
                             After graduating, I continued my education at the University of Birmingham and undertook a postgraduate Computer Science course. 
                             My final research project, as part of my postgraduate course, dealt with the influence of machine translation on sentiment. 
@@ -64,27 +64,27 @@
 When another section is clicked, that section will be shown.
 Function: onclick="opentab('ID of tab')"" -->
 
-                            <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
-                            <p class="tab-links" onclick="opentab('Skills')" >Skills</p>
+                            <p id="Education" class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                            <p id="Skills" class="tab-links" onclick="opentab('Skills')" >Skills</p>
                             <!-- <p class="tab-links" onclick="opentab('XYZ')">XYZ</p> -->
                         </div>
 
                         <div class="tab-contents active-tab" id="Education">
                             <!-- we assign an id to this div tab so we can pass it to onclick function to open this tab -->
                             <ul>
-                                <li class="Education 1"><span>2021-22</span><br>MSc Computer Science - University of Birmingham</li>
-                                <li class="Education 2"><span>2021-22</span><br>BA (Hons) English Language and Linguistics - University of York</li>
-                                <li class="Education 3"><span>2016-18</span><br>Secondary Education - Advanced Level - Luxembourg</li>
-                                <li class="Education 4"><span>2013-16</span><br>Technician in civil engineering - Luxembourg</li>
+                                <li id="Education1"><span>2021-22</span><br>MSc Computer Science - University of Birmingham</li>
+                                <li id="Education2"><span>2021-22</span><br>BA (Hons) English Language and Linguistics - University of York</li>
+                                <li id="Education3"><span>2016-18</span><br>Secondary Education - Advanced Level - Luxembourg</li>
+                                <li id="Education4"><span>2013-16</span><br>Technician in civil engineering - Luxembourg</li>
                             </ul>
                         </div>
 
                         <div class="tab-contents " id="Skills">
                             <!-- we assign an id to this div tab so we can pass it to onclick function to open this tab -->
                             <ul>
-                                <li class="Skills 1"><span>Programming</span><br>Java, Python 3, LaTeX, SQL, HTML, CSS</li>
-                                <li class="Skills 2"><span>Linguistics</span><br>Luxembourgish, English, German, French </li>
-                                <li class="Skills 3"><span>Technical Competencies</span><br>JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode</li>
+                                <li id="Skills1"><span>Programming</span><br>Java, Python 3, LaTeX, SQL, HTML, CSS</li>
+                                <li id="Skills2"><span>Linguistics</span><br>Luxembourgish, English, German, French </li>
+                                <li id="Skills3"><span>Technical Competencies</span><br>JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode</li>
                                 <!-- <li><span>TBD</span><br>TBD information</li> -->
                             </ul>
                         </div>
@@ -95,13 +95,13 @@ Function: onclick="opentab('ID of tab')"" -->
         <!-- ----------- Portfolio ------------ -->
         <div id="portfolio">
             <div class="container">
-                <h1 class="sub-title">My Work</h1>
+                <h1 id="My-work" class="My-work">My Work</h1>
                 <div class="work-list">
                     <div class="work">
                         <img src="images/my_work.png" width="100%">
                         <div class="layer">
-                            <h3 class="Twitter">Twitter Sentiment Analysis </h3>
-                            <p class="Twitter App Explanation">This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag-related tweets.</p>
+                            <h3 id="Twitter" class="Twitter">Twitter Sentiment Analysis </h3>
+                            <p id="Twitter-App-Explanation" class="Twitter App Explanation">This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag-related tweets.</p>
                             <a href="https://alexanderverheecke-sentimentanalysisapp-main-jhis3e.streamlitapp.com/" class="icon" ><i class="fa-regular fa-square-up-right"></i></a>
 
                         </div>
@@ -135,7 +135,7 @@ Function: onclick="opentab('ID of tab')"" -->
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
+                <h1 class="contact-me">Contact Me</h1>
                 <p><i class="fa-solid fa-envelope"></i> alexander.verheecke@hotmail.com</p>
 
                 <div class="social-icons">
@@ -213,29 +213,75 @@ Function: onclick="opentab('ID of tab')"" -->
   </script>
 
 
-<!-- --------- Langauge change ------- -->
-
-
-  <script>document.querySelector('#language').addEventListener("change", function() {
-    if (this.value == "🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG") {
-        // change all text to ENG
-    }else if (this.value == "🇩🇪 DE"){
-        // change all text to DE
-    // }else if (this.value == "🇫🇷 FR"){
-       // change all text to FR
-    // }else if (this.value == "🇱🇺 LUX"){
-       // change all text to LUX
-    }
-  });</script>
-
+<!-- --------- Language change ------- -->
 
 <script>
-    const selectLanguage = document.querySelector('.language');
+    const jsonDE = {
+    "Home": "Startseite",
+    "About": "Über mich",
+    "Portfolio": "Portfolio",
+    "Contact": "Kontakt",
+    "RecentGrad": "Hochschulabsolvent & angehender Entwickler",
+    "Name": "Hallo, ich bin Alex Verheecke von Luxembourg",
+    "about-me": "Über mich",
+    "about-me-text": "2018 bin ich von Luxemburg nach Großbritannien umgezogen, um einen Bachelorabschluss in der Englischen Sprache und Linguistik zu studieren. Während des Lockdowns im März 2020 begann ich meine Reise in die Programmierung mit dem Java Programming MOOC der Universität von of Helsinki. Nach meinem Abschluss setzte ich meine Ausbildung an der Universität von Birmingham fort und absolvierte einen Masterabschluss in den Computerwissenschaften. Derzeit schreibe ich an meiner Dissertation über den Einfluss der maschinellen Übersetzung auf die Meinung eines Textes. Ich bin jetzt aktiv auf der Suche nach einem Job im Bereich Softwareentwicklung.",
+    "Education": "Ausbildung",
+    "Skills": "Kompetenzen",
+    "Education1":"<span>2021-22</span><br>MSc Computerwissenschaft - Universität von Birmingham",
+    "Education2":"<span>2021-22</span><br>BA (Hons) Englische Sprache and Linguistik - Universität von York",
+    "Education3":"<span>2016-18</span><br>Sekundarschulbildung - Fortgeschrittene Stufe - Luxembourg",
+    "Education4":"<span>2013-16</span><br>Techniker im Bauwesen - Luxembourg",
+    "Skills 1":"<span>Programmierung</span><br>Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "Skills 2":"<span>Sprachkenntnisse</span><br>Luxemburgish, Englisch, Deutsch, Französisch ",
+    "Skills 3":"<span>Technische Kompetenzen</span><br>JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "My-work": "Meine Werke",
+    "Twitter-App-Explanation": "Diese Webanwendung ermöglicht die Analyse der negativen, neutralen und positiven Meinungen von Tweets.",
+    "contact-me": "Kontaktaufnahme"
+}
 
-    selectLanguage.addEventListener('change', (event) => {
-    const result = document.querySelector('.result');
-    result.textContent = `You like ${event.target.value}`;
-    });
-</script>
+const jsonEN = {
+    "Home": "Home",
+    "About": "About",
+    "Portfolio": "Portfolio",
+    "Contact": "Contact",
+    "RecentGrad": "Recent graduate & aspiring developer",
+    "Name": "Hi, I'm Alex Verheecke from Luxembourg",
+    "about-me": "About me",
+    "about-me-text": "I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Language and Linguistics. During the lockdown in March 2020, I began my journey in programming with the University of Helsinki's Java Programming MOOC.After graduating, I continued my education at the University of Birmingham, undertaking a postgraduate Computer Science course. Currently, I am writing my thesis on the influence of machine translation on sentiment. I am now actively searching for a job in Software Development.",
+    "Education": "Education",
+    "Skills": "Skills",
+    "Education1":"<span>2021-22</span><br>MSc Computer Science - Univeristy of Birmingham",
+    "Education2":"<span>2021-22</span><br>BA (Hons) English Language and Linguistics - University of York",
+    "Education3":"<span>2016-18</span><br>Seconday Education - Advanced Level - Luxembourg",
+    "Education4":"<span>2013-16</span><br>Technician in civil engineering - Luxembourg",
+    "Skills1":"<span>Programming</span><br>Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "Skills2":"<span>Linguistics</span><br>Luxembourgish, English, German, French ",
+    "Skills3":"<span>Technical Competencies</span><br>JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "My-work": "My Work",
+    "Twitter-App-Explanation": "This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag related tweets.",
+    "contact-me": "Conact me"
+}
+
+
+document.querySelector('#language').addEventListener("change", function() {
+  if (this.value == "🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG") {
+    // change all text to ENG
+    for (let key in jsonEN) {
+      document.querySelector('#' + key).textContent = jsonEN[key]
+      
+    }
+  } else if (this.value == "🇩🇪 DE") {
+    // change all text to DE
+    for (let key in jsonDE) {
+      document.querySelector('#' + key).textContent = jsonDE[key]
+    }
+    
+  // }else if (this.value == "🇫🇷 FR"){
+    // change all text to FR
+  // }else if (this.value == "🇱🇺 LUX"){
+    // change all text to LUX
+  }
+});
+    </script>   
     </body>
 </html>
