@@ -110,35 +110,23 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 50%;
 }
-
-.about-me{         /* About Me */               
+.sub-title{
     font-size: 60px;
     font-weight: 600;
     color: white;
 }
 
-.My-work{         /* My Work */                 
-    font-size: 60px;
-    font-weight: 600;
-    color: white;
-}
-
-.contact-me{           /* Contact Me */             
-    font-size: 60px;
-    font-weight: 600;
-    color: white;
-}
-
-.tab-titles{                /* positioning of the tabs*/
+.tab-titles{
     display: flex;
     margin: 20px 0 40px;
 }
 
-.about-me-text{              /* the about me text */
+.about-me-text{
     font-size: 16px;
 }
 
-.tab-links{                 /* The header of each section in about me: Eduction, Skills */
+.tab-links{
+    /* The header of each section in about me: Eduction, Skills */
     margin-right: 50px;
     font-size: 15px;
     font-weight: 500;
@@ -147,8 +135,8 @@ nav ul li a:hover::after{
 }
 
 
-
-.tab-links::after{          /* Format for the line underneath a selected header item */
+/* The line underneath a selected header item */
+.tab-links::after{
     content: '';
     width: 0;
     height: 3px;
@@ -159,27 +147,25 @@ nav ul li a:hover::after{
     transition: 0.3s;
 }
 
-
-.tab-links.active-link::after{  /* makes line visible with width */
+.tab-links.active-link::after{
     width: 100%;
 }
 
-.tab-contents ul li{        /* The lists of the sub-headers */
+.tab-contents ul li{
     list-style: none;
     margin: 10px 0;
 }
 
 
-
-.tab-contents ul li span{       /* the sub-header for each header in about me Section: Education -> 2021-2022; Skills -> Programming etc... */
+/* the sub-header for each header in about me Section: Education -> 2021-2022; Skills -> Programming etc... */
+.tab-contents ul li span{
     color: #3a65ed;
     font-size: 14px;
 }
 
 
 
-
-.tab-contents{                  /* Text in the contenss of the tabs  */
+.tab-contents{
     /*  This hides all the content of tab-contens 
     so it can later be shown when section is chosen*/
     display: none;  
