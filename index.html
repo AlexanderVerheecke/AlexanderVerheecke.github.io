@@ -1,3 +1,6 @@
+
+<!-- When changing the langauge, it sets the angaueg correctly but the links and the unferlinefor the top menu are broken --->
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -14,7 +17,6 @@
         <div id="header">
         <div class="container">
 
-
             <nav>
                 <img src="images/test logo better sized.png" class="logo" width="20%">
                 <ul id="sidemenu">
@@ -24,10 +26,10 @@
                     <li id="_Portfolio"><a href="#portfolio">Portfolio</a> </li>
                     <li id="_Contact"><a href="#contact">Contact</a> </li>
                     <!-- <li class="LanguageSet"><a href="#">Select Language</a> </li> -->
-                        <select id="language" class="language">
+                        <select id="language" class="language"> -->
                         <option>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</option>
                         <option>🇩🇪 DE</option> 
-                        <!-- <option>🇫🇷 FR</option> -->
+                        <!-- <option>🇫🇷 FR</option>  -->
                         <option>🇱🇺 LUX</option> 
                     
 
@@ -325,19 +327,19 @@ document.querySelector('#language').addEventListener("change", function() {
   if (this.value == "🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG") {
     // change all text to ENG
     for (let key in jsonEN) {
-      document.querySelector('#' + key).textContent = jsonEN[key]
+      document.querySelector("#" + key + " a").textContent = jsonEN[key]
       
     }
   } else if (this.value == "🇩🇪 DE") {
     // change all text to DE
     for (let key in jsonDE) {
-      document.querySelector('#' + key).textContent = jsonDE[key]
+      document.querySelector("#" + key + " a").textContent = jsonDE[key]
     }
 } 
   else if (this.value == "🇱🇺 LUX") {
     // change all text to DE
     for (let key in jsonDE) {
-      document.querySelector('#' + key).textContent = jsonLUX[key]
+      document.querySelector("#" + key + " a").textContent = jsonLUX[key]
     }
 }
 });
