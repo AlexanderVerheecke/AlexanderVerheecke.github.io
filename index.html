@@ -27,8 +27,9 @@
                         <select id="language" class="language">
                         <option>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</option>
                         <option>🇩🇪 DE</option> 
-                        <!-- <option>🇫🇷 FR</option>
-                        <option>🇱🇺 LUX</option> -->
+                        <!-- <option>🇫🇷 FR</option> -->
+                        <option>🇱🇺 LUX</option> 
+                    
 
                     </select>
                     <li class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -53,10 +54,9 @@
                     <div class="about-col-2">
                         <h1 id="_about-me" class="about-me">About Me</h1>
                         <p id="_about-me-text" class="about-me-text"> I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Language and Linguistics. 
-                            During the lockdown in March 2020, I began my journey in programming with the University of Helsinki's Java Programming MOOC.
+                            During the lockdown in March 2020, I began my programming journey with the University of Helsinki's Java Programming MOOC.
                             After graduating, I continued my education at the University of Birmingham and undertook a postgraduate Computer Science course. 
-                            My final research project, as part of my postgraduate course, dealt with the influence of machine translation on sentiment. 
-                            Currently, I am actively searching for employment in Software Development.
+                            I conducted my final postgraduate research project on the influence of machine translation on sentiment. I am now actively searching for a job in Software Development.
                         </p>
                         <div class="tab-titles">
 <!-- onclick event makes it so that an event happens when the user clicks. Currently Education automatically shown.
@@ -250,17 +250,52 @@ Function: onclick="opentab('ID of tab')"" -->
     "_Submit": "Senden"
 }
 
+const jsonLUX = {
+    "_Home": "Startsäit",
+    "_About": "Iwwert mech",
+    "_Portfolio": "Portfolio",
+    "_Contact": "Kontakt",
+    "_RecentGrad": "Rezent Graduéierten & Aspirant Entwéckler",
+    "_Hello": "Moien, ech sinn den",
+    "_Name": "Alex Verheecke",
+    "_Country" :"vu Lëtzebuerg",
+    "_about-me": "Iweer mech",
+    "_about-me-text": "Ech sinn 2018 vu Lëtzebuerg op Groussbritannien geplënnert fir en Bachelor an der Englescher Sprooch a Linguistik ze studéieren. Wärend dem Lockdown am Mäerz 2020 hunn ech meng Rees an der Programméierung mam Java Programming MOOC vun der Universitéit vu Helsinki ugefaangen. Nom mengem Bachelorofschloss hunn ech meng Ausbildung op der Universiteit vu Birmingham fortgesat an e Master an der Computerwëssenschaft ofgeschloss. Ech hunn meng Masteraarbecht iwwer den Afloss vun der Maschinn Iwwersetzung op d'Emotiounen vum Text gemaach. Ech sichen elo aktiv no enger Aarbecht an der Software Entwécklung an Groussbritannien.",
+    "_Education": "Ausbildung",
+    "_Skills": "Kompetenzen",
+    // "_Master": "2021-22",
+    "_Master-details": "MSc Computerwëssenschaft - Universitéit vu Birmingham",
+    // "_BA":"2018-21",
+    "_BA-details": "BA (Hons)Englesch Sprooch a Linguistik - Universitéit vu York",
+    // "_Secondary":"2020-21",
+    "_Secondary-details": "Enseignement secondaire général  - Lëtzebuerg",
+    // "_Civil":"2012-16",
+    "_Civil-details": "Techniker am Déifbau - Lëtzebuerg",
+    "_Programming":"Programméierung",
+    "_Programming-details":"Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "_Linguistics": "Sproochleche Kompetenzen",
+    "_Linguistics-details": "Lëtzebuergesch, Englesch, Däitsch, Franséisch",
+    "_Technical": "Technesch Kompetenzen",
+    "_Technical-details": "JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "_My-work": "Meng Projeten",
+    "_Twitter": "Twitter Stëmmung Analyse",
+    "_Twitter-App-Explanation": "Mat dëser Webapplikatioun kann een d'negativ, neutral a positiv Meenungen vu Tweets analyséieren.",
+    "_contact-me": "Kontaktéier mech",
+    "_Download": "Liewenslaf eroflueden",
+    "_Submit": "Schécken"
+}
+
 const jsonEN = {
     "_Home": "Home",
     "_About": "About",
     "_Portfolio": "Portfolio",
-    "_Contact": "Contact",
+    "_Contact": "Kontakt",
     "_RecentGrad": "Recent graduate & aspiring developer",
     "_Hello": "Hi, I'm",
     "_Name": "Alex Verheecke",
-    "_Country" :"from Luxemburg",
+    "_Country" :"from Luxembourg",
     "_about-me": "About Me",
-    "_about-me-text": "I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Language and Linguistics. During the lockdown in March 2020, I began my journey in programming with the University of Helsinki's Java Programming MOOC. After graduating, I continued my education at the University of Birmingham, undertaking a postgraduate Computer Science course. Currently, I am writing my thesis on the influence of machine translation on sentiment. I am now actively searching for a job in Software Development.",
+    "_about-me-text": "I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Language and Linguistics. During the lockdown in March 2020, I began my programming journey with the University of Helsinki's Java Programming MOOC. After graduating, I continued my education at the University of Birmingham and undertook a postgraduate Computer Science course. I conducted my final postgraduate research project on the influence of machine translation on sentiment. I am now actively searching for a job in Software Development.",
     "_Education": "Education",
     "_Skills": "Skills",
     // "_Master": "2021-22",
@@ -298,12 +333,13 @@ document.querySelector('#language').addEventListener("change", function() {
     for (let key in jsonDE) {
       document.querySelector('#' + key).textContent = jsonDE[key]
     }
-    
-  // }else if (this.value == "🇫🇷 FR"){
-    // change all text to FR
-  // }else if (this.value == "🇱🇺 LUX"){
-    // change all text to LUX
-  }
+} 
+  else if (this.value == "🇱🇺 LUX") {
+    // change all text to DE
+    for (let key in jsonDE) {
+      document.querySelector('#' + key).textContent = jsonLUX[key]
+    }
+}
 });
     </script>    
     </body>
