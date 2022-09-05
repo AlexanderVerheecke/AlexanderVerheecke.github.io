@@ -24,6 +24,10 @@ html{
 
 }
 
+#_Home, #_About, #_Portfolio, #_Contact{
+    font-size: 18px;
+}
+
 .container{
     padding: 10px 10%;
 }
@@ -79,7 +83,7 @@ nav ul li a:hover::after{
     margin-top: 20px ;
 }
 
-.header-text h1 span{
+.header-text h1 span#_Name{
     color: #D12612;
 }
 

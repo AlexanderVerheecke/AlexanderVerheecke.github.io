@@ -1,4 +1,4 @@
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,25 +13,24 @@
     <body>
         <div id="header">
         <div class="container">
-            <!-- <label>Select Language</label> -->
-            <!-- <br> -->
+
 
             <nav>
                 <img src="images/test logo better sized.png" class="logo" width="20%">
                 <ul id="sidemenu">
-                    <li id="Home" class="Home"><a href="#header">Home</a> </li>
-                    <li id="About" class="About"><a href="#about">About</a> </li>
+                    <li id="_Home"><a href="#header">Home</a> </li>
+                    <li id="_About"><a href="#about">About</a> </li>
                     <!-- <li><a href="#">Services</a> </li> -->
-                    <li id="Portfolio" class="Portfolio"><a href="#portfolio">Portfolio</a> </li>
-                    <li id="Contact" class="Contact"><a href="#contact">Contact</a> </li>
+                    <li id="_Portfolio"><a href="#portfolio">Portfolio</a> </li>
+                    <li id="_Contact"><a href="#contact">Contact</a> </li>
                     <!-- <li class="LanguageSet"><a href="#">Select Language</a> </li> -->
-                        <!-- <select id="language" class="language">
+                        <select id="language" class="language">
                         <option>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</option>
                         <option>🇩🇪 DE</option> 
-                        <option>🇫🇷 FR</option>
-                        <option>🇱🇺 LUX</option>
+                        <!-- <option>🇫🇷 FR</option>
+                        <option>🇱🇺 LUX</option> -->
 
-                    </select> -->
+                    </select>
                     <li class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
                     
                 </ul>
@@ -39,8 +38,8 @@
                 
             </nav>
             <div class="header-text">
-                <p id="RecentGrad" class="RecentGrad"> Recent graduate & aspiring developer</p>
-                <h1 id="Name" class="Name">Hi, I'm <span>Alex Verheecke</span> from Luxembourg</h1>
+                <p id="_RecentGrad"> Recent graduate & aspiring developer</p>
+                <h1> <span id="_Hello"> Hi, I'm </span> <span id="_Name"> Alex Verheecke </span> <br> <span id="_Country"> from Luxembourg </span> </h1>
             </div>
         </div>
         <!-- -------------about me section------------- -->
@@ -52,8 +51,8 @@
                         <img src="images/me_waterfall_solidbackground.png" >
                     </div>
                     <div class="about-col-2">
-                        <h1 id="about-me" class="about-me">About Me</h1>
-                        <p id="about-me-text" class="about-me-text"> I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Language and Linguistics. 
+                        <h1 id="_about-me" class="about-me">About Me</h1>
+                        <p id="_about-me-text" class="about-me-text"> I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Language and Linguistics. 
                             During the lockdown in March 2020, I began my journey in programming with the University of Helsinki's Java Programming MOOC.
                             After graduating, I continued my education at the University of Birmingham and undertook a postgraduate Computer Science course. 
                             My final research project, as part of my postgraduate course, dealt with the influence of machine translation on sentiment. 
@@ -64,28 +63,27 @@
 When another section is clicked, that section will be shown.
 Function: onclick="opentab('ID of tab')"" -->
 
-                            <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
-                            <p class="tab-links" onclick="opentab('Other')" >Skills</p>
+                            <p id="_Education" class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                            <p id="_Skills" class="tab-links" onclick="opentab('Other')" >Skills</p>
                             <!-- <p class="tab-links" onclick="opentab('XYZ')">XYZ</p> -->
                         </div>
 
                         <div class="tab-contents active-tab" id="Education">
                             <!-- we assign an id to this div tab so we can pass it to onclick function to open this tab -->
                             <ul>
-                                <li><span>2021-22</span><br>MSc Computer Science - University of Birmingham</li>
-                                <li><span>2018-21</span><br>BA (Hons) English Language and Linguistics - University of York</li>
-                                <li><span>2016-18</span><br>Secondary Education - Advanced Level - Luxembourg</li>
-                                <li><span>2013-16</span><br>Technician in civil engineering - Luxembourg</li>
+                                <li id="_Master"><span>2021-22</span><br><p id="_Master-details">MSc Computer Science - University of Birmingham</p></li>
+                                <li id="_BA"><span>2018-21</span><br> <p id="_BA-details">BA (Hons) English Language and Linguistics - University of York </p></li>
+                                <li id="_Secondary"><span>2016-18</span><br> <p id="_Secondary-details">Secondary Education - Advanced Level - Luxembourg </p></li>
+                                <li id="_Civil"><span>2013-16</span><br> <p id="_Civil-details">Technician in civil engineering - Luxembourg </p></li>
                             </ul>
                         </div>
 
                         <div class="tab-contents " id="Other">
                             <!-- we assign an id to this div tab so we can pass it to onclick function to open this tab -->
                             <ul>
-                                <li id="Skills1"><span>Programming</span><br>Java, Python 3, LaTeX, SQL, HTML, CSS</li>
-                                <li id="Skills2"><span>Linguistics</span><br>Luxembourgish, English, German, French </li>
-                                <li id="Skills3"><span>Technical Competencies</span><br>JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode</li>
-                                <!-- <li><span>TBD</span><br>TBD information</li> -->
+                                <li><span id="_Programming"> Programming</span><br> <p id="_Programming-details">Java, Python 3, LaTeX, SQL, HTML, CSS </p></li>
+                                <li><span id="_Linguistics">Linguistics</span><br> <p id="_Linguistics-details">Luxembourgish, English, German, French </p> </li>
+                                <li><span id="_Technical">Technical Competencies</span><br> <p id="_Technical-details">JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode </p></li>
                             </ul>
                         </div>
                 </div>
@@ -95,13 +93,13 @@ Function: onclick="opentab('ID of tab')"" -->
         <!-- ----------- Portfolio ------------ -->
         <div id="portfolio">
             <div class="container">
-                <h1 id="My-work" class="My-work">My Work</h1>
+                <h1 id="_My-work" class="My-work">My Work</h1>
                 <div class="work-list">
                     <div class="work">
                         <img src="images/my_work.png" width="100%">
                         <div class="layer">
-                            <h3 class="Twitter">Twitter Sentiment Analysis </h3>
-                            <p>This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag-related tweets.</p>
+                            <h3 id="_Twitter" class="Twitter">Twitter Sentiment Analysis </h3>
+                            <p id="_Twitter-App-Explanation">This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag-related tweets.</p>
                             <a href="https://alexanderverheecke-sentimentanalysisapp-main-jhis3e.streamlitapp.com/" class="icon" ><i class="fa-regular fa-square-up-right"></i></a>
 
                         </div>
@@ -135,25 +133,26 @@ Function: onclick="opentab('ID of tab')"" -->
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="contact-me">Contact Me</h1>
+                <h1 id="_contact-me" class="contact-me">Contact Me</h1>
                 <p><i class="fa-solid fa-envelope"></i> alexander.verheecke@hotmail.com</p>
 
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/verheecke/" ><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/AlexanderVerheecke" ><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="/images/Alexander_Verheecke_CV.pdf" download class="button">Download CV</a>
+                <a id="_Download" href="/images/Alexander_Verheecke_CV.pdf" download class="button">Download CV</a>
             </div>
             <div class="contact-right">
                 <!-- form creates a form fiels -->
                 <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your name" required>
-                    <input type="email" name="Email" placeholder="Your email" required>
-                    <textarea name="Message" rows="8" placeholder="Your message"></textarea>
-                    <button type="submit" class="button">Submit</button>
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Text" rows="8" placeholder="Text"></textarea>
+                    <button id="_Submit" type="submit" class="button">Submit</button>
                 </form>
                 <span id="msg"></span>
             </div>
+        
         </div>
     </div>
 </div>
@@ -214,52 +213,76 @@ Function: onclick="opentab('ID of tab')"" -->
 
 
 <!-- --------- Language change ------- -->
-<!-- 
+
 <script>
     const jsonDE = {
-    "Home": "Startseite",
-    "About": "Über mich",
-    "Portfolio": "Portfolio",
-    "Contact": "Kontakt",
-    "RecentGrad": "Hochschulabsolvent & angehender Entwickler",
-    "Name": "Hallo, ich bin Alex Verheecke von Luxembourg",
-    "about-me": "Über mich",
-    "about-me-text": "2018 bin ich von Luxemburg nach Großbritannien umgezogen, um einen Bachelorabschluss in der Englischen Sprache und Linguistik zu studieren. Während des Lockdowns im März 2020 begann ich meine Reise in die Programmierung mit dem Java Programming MOOC der Universität von of Helsinki. Nach meinem Abschluss setzte ich meine Ausbildung an der Universität von Birmingham fort und absolvierte einen Masterabschluss in den Computerwissenschaften. Derzeit schreibe ich an meiner Dissertation über den Einfluss der maschinellen Übersetzung auf die Meinung eines Textes. Ich bin jetzt aktiv auf der Suche nach einem Job im Bereich Softwareentwicklung.",
-    "Education": "Ausbildung",
-    "Skills": "Kompetenzen",
-    "Education1":"<span>2021-22</span><br>MSc Computerwissenschaft - Universität von Birmingham",
-    "Education2":"<span>2021-22</span><br>BA (Hons) Englische Sprache and Linguistik - Universität von York",
-    "Education3":"<span>2016-18</span><br>Sekundarschulbildung - Fortgeschrittene Stufe - Luxembourg",
-    "Education4":"<span>2013-16</span><br>Techniker im Bauwesen - Luxembourg",
-    "Skills 1":"<span>Programmierung</span><br>Java, Python 3, LaTeX, SQL, HTML, CSS",
-    "Skills 2":"<span>Sprachkenntnisse</span><br>Luxemburgish, Englisch, Deutsch, Französisch ",
-    "Skills 3":"<span>Technische Kompetenzen</span><br>JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
-    "My-work": "Meine Werke",
-    "Twitter-App-Explanation": "Diese Webanwendung ermöglicht die Analyse der negativen, neutralen und positiven Meinungen von Tweets.",
-    "contact-me": "Kontaktaufnahme"
+    "_Home": "Startseite",
+    "_About": "Über mich",
+    "_Portfolio": "Portfolio",
+    "_Contact": "Kontakt",
+    "_RecentGrad": "Hochschulabsolvent & angehender Entwickler",
+    "_Hello": "Hallo, ich bin ",
+    "_Name": "Alex Verheecke",
+    "_Country" :"von Luxemburg",
+    "_about-me": "Über mich",
+    "_about-me-text": "2018 bin ich von Luxemburg nach Großbritannien umgezogen, um einen Bachelorabschluss in der Englischen Sprache und Linguistik zu studieren. Während des Lockdowns im März 2020 begann ich meine Reise in die Programmierung mit dem Java Programming MOOC der Universität von of Helsinki. Nach meinem Abschluss setzte ich meine Ausbildung an der Universität von Birmingham fort und absolvierte einen Masterabschluss in den Computerwissenschaften. Derzeit schreibe ich an meiner Dissertation über den Einfluss der maschinellen Übersetzung auf die Stimmung eines Textes. Ich bin jetzt aktiv auf der Suche nach einem Job im Bereich Softwareentwicklung.",
+    "_Education": "Ausbildung",
+    "_Skills": "Kompetenzen",
+    // "_Master": "2021-22",
+    "_Master-details": "MSc Computerwissenschaft - Universität von Birmingham",
+    // "_BA":"2018-21",
+    "_BA-details": "BA (Hons) Englische Sprache and Linguistik - Universität von York",
+    // "_Secondary":"2020-21",
+    "_Secondary-details": "Sekundarschulbildung - Fortgeschrittene Stufe - Luxembourg",
+    // "_Civil":"2012-16",
+    "_Civil-details": "Techniker im Bauwesen - Luxembourg",
+    "_Programming":"Programmierung",
+    "_Programming-details":"Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "_Linguistics": "Sprachenkenntnisse",
+    "_Linguistics-details": "Luxemburgisch, Englisch, Deutsch, Französisch",
+    "_Technical": "Technische Kompetenzen",
+    "_Technical-details": "JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "_My-work": "Meine Projekte",
+    "_Twitter": "Twitter Stimmungsanalyse",
+    "_Twitter-App-Explanation": "Diese Webanwendung ermöglicht die Analyse der negativen, neutralen und positiven Meinungen von Tweets.",
+    "_contact-me": "Kontaktaufnahme",
+    "_Download": "Lebenslauf herunterladen",
+    "_Submit": "Senden"
 }
 
 const jsonEN = {
-    "Home": "Home",
-    "About": "About",
-    "Portfolio": "Portfolio",
-    "Contact": "Contact",
-    "RecentGrad": "Recent graduate & aspiring developer",
-    "Name": "Hi, I'm Alex Verheecke from Luxembourg",
-    "about-me": "About me",
-    "about-me-text": "I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Language and Linguistics. During the lockdown in March 2020, I began my journey in programming with the University of Helsinki's Java Programming MOOC.After graduating, I continued my education at the University of Birmingham, undertaking a postgraduate Computer Science course. Currently, I am writing my thesis on the influence of machine translation on sentiment. I am now actively searching for a job in Software Development.",
-    "Education": "Education",
-    "Skills": "Skills",
-    "Education1":"<span>2021-22</span><br>MSc Computer Science - Univeristy of Birmingham",
-    "Education2":"<span>2021-22</span><br>BA (Hons) English Language and Linguistics - University of York",
-    "Education3":"<span>2016-18</span><br>Seconday Education - Advanced Level - Luxembourg",
-    "Education4":"<span>2013-16</span><br>Technician in civil engineering - Luxembourg",
-    "Skills1":"<span>Programming</span><br>Java, Python 3, LaTeX, SQL, HTML, CSS",
-    "Skills2":"<span>Linguistics</span><br>Luxembourgish, English, German, French ",
-    "Skills3":"<span>Technical Competencies</span><br>JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
-    "My-work": "My Work",
-    "Twitter-App-Explanation": "This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag related tweets.",
-    "contact-me": "Conact me"
+    "_Home": "Home",
+    "_About": "About",
+    "_Portfolio": "Portfolio",
+    "_Contact": "Contact",
+    "_RecentGrad": "Recent graduate & aspiring developer",
+    "_Hello": "Hi, I'm",
+    "_Name": "Alex Verheecke",
+    "_Country" :"from Luxemburg",
+    "_about-me": "About Me",
+    "_about-me-text": "I moved from Luxembourg to the UK in 2018 to pursue an undergraduate degree in English Language and Linguistics. During the lockdown in March 2020, I began my journey in programming with the University of Helsinki's Java Programming MOOC. After graduating, I continued my education at the University of Birmingham, undertaking a postgraduate Computer Science course. Currently, I am writing my thesis on the influence of machine translation on sentiment. I am now actively searching for a job in Software Development.",
+    "_Education": "Education",
+    "_Skills": "Skills",
+    // "_Master": "2021-22",
+    "_Master-details": "MSc Computer Science - Univeristy of Birmingham",
+    // "_BA":"2018-21",
+    "_BA-details": "BA (Hons) English Language and Linguistics - University of York",
+    // "_Secondary":"2020-21",
+    "_Secondary-details": "Seconday Education - Advanced Level - Luxembourg",
+    // "_Civil":"2012-16",
+    "_Civil-details": "Technician in civil engineering - Luxembourg",
+    "_Programming":"Programming",
+    "_Programming-details":"Java, Python 3, LaTeX, SQL, HTML, CSS",
+    "_Linguistics": "Linguistics",
+    "_Linguistics-details": "Luxembourgish, English, German, French ",
+    "_Technical": "Technical Competencies",
+    "_Technical-details": "JavaFX, PostgresSQL, Git/GitHub, Intellij, VSCode",
+    "_My-work": "My Work",
+    "_Twitter": "Twitter Sentiment Analysis",
+    "_Twitter-App-Explanation": "This web app enables the negative, neutral, and positive sentiment analysis of recent hashtag related tweets.",
+    "_contact-me": "Conact me",
+    "_Download": "Download CV",
+    "_Submit": "Submit"
 }
 
 
@@ -282,6 +305,6 @@ document.querySelector('#language').addEventListener("change", function() {
     // change all text to LUX
   }
 });
-    </script>    -->
+    </script>    
     </body>
 </html>
