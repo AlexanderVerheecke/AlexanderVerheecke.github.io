@@ -20,7 +20,7 @@
             <nav>
                 <img src="images/test logo better sized.png" class="logo" width="20%">
                 <ul id="sidemenu">
-                    <li id="_Home"><a href="#header">Home</a> </li>
+                    <li id="_Home"><a href="#home">Home</a> </li>
                     <li id="_About"><a href="#about">About</a> </li>
                     <!-- <li><a href="#">Services</a> </li> -->
                     <li id="_Portfolio"><a href="#portfolio">Portfolio</a> </li>
@@ -29,7 +29,7 @@
                         <select id="language" class="language"> -->
                         <option>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</option>
                         <option>🇩🇪 DE</option> 
-                        <!-- <option>🇫🇷 FR</option>  -->
+                        <option>🇫🇷 FR</option> 
                         <option>🇱🇺 LUX</option> 
                     
 
@@ -149,7 +149,7 @@ Function: onclick="opentab('ID of tab')"" -->
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Name" required>
                     <input type="email" name="Email" placeholder="Email" required>
-                    <textarea name="Text" rows="8" placeholder="Text"></textarea>
+                    <textarea name="Text" rows="8" placeholder="Text" required></textarea>
                     <button id="_Submit" type="submit" class="button">Submit</button>
                 </form>
                 <span id="msg"></span>
@@ -218,10 +218,10 @@ Function: onclick="opentab('ID of tab')"" -->
 
 <script>
     const jsonDE = {
-    "_Home": "Startseite",
-    "_About": "Über mich",
-    "_Portfolio": "Portfolio",
-    "_Contact": "Kontakt",
+    "_Home": "<a href=\"#home\">Startseite</a>",
+    "_About": "<a href=\"#about\">Über mich</a>",
+    "_Portfolio": "<a href=\"#portfolio\">Portfolio</a>",
+    "_Contact": "<a href=\"#contact\">Kontakt</a>",
     "_RecentGrad": "Hochschulabsolvent & angehender Entwickler",
     "_Hello": "Hallo, ich bin ",
     "_Name": "Alex Verheecke",
@@ -253,15 +253,15 @@ Function: onclick="opentab('ID of tab')"" -->
 }
 
 const jsonLUX = {
-    "_Home": "Startsäit",
-    "_About": "Iwwert mech",
-    "_Portfolio": "Portfolio",
-    "_Contact": "Kontakt",
+    "_Home": "<a href=\"#home\">Startsäit</a>",
+    "_About": "<a href=\"#about\">Iwwert mech</a>",
+    "_Portfolio": "<a href=\"#portfolio\">Portfolio</a>",
+    "_Contact": "<a href=\"#contact\">Kontakt</a>",
     "_RecentGrad": "Rezent Graduéierten & Aspirant Entwéckler",
     "_Hello": "Moien, ech sinn den",
     "_Name": "Alex Verheecke",
     "_Country" :"vu Lëtzebuerg",
-    "_about-me": "Iweer mech",
+    "_about-me": "Iweert mech",
     "_about-me-text": "Ech sinn 2018 vu Lëtzebuerg op Groussbritannien geplënnert fir en Bachelor an der Englescher Sprooch a Linguistik ze studéieren. Wärend dem Lockdown am Mäerz 2020 hunn ech meng Rees an der Programméierung mam Java Programming MOOC vun der Universitéit vu Helsinki ugefaangen. Nom mengem Bachelorofschloss hunn ech meng Ausbildung op der Universiteit vu Birmingham fortgesat an e Master an der Computerwëssenschaft ofgeschloss. Ech hunn meng Masteraarbecht iwwer den Afloss vun der Maschinn Iwwersetzung op d'Emotiounen vum Text gemaach. Ech sichen elo aktiv no enger Aarbecht an der Software Entwécklung an Groussbritannien.",
     "_Education": "Ausbildung",
     "_Skills": "Kompetenzen",
@@ -288,10 +288,10 @@ const jsonLUX = {
 }
 
 const jsonEN = {
-    "_Home": "Home",
-    "_About": "About",
-    "_Portfolio": "Portfolio",
-    "_Contact": "Contact",
+    "_Home": "<a href=\"#home\">Home</a>",
+    "_About": "<a href=\"#about\">About</a>",
+    "_Portfolio": "<a href=\"#portfolio\">Portfolio</a>",
+    "_Contact": "<a href=\"#contact\">Contact</a>",
     "_RecentGrad": "Recent graduate & aspiring developer",
     "_Hello": "Hi, I'm",
     "_Name": "Alex Verheecke",
@@ -324,11 +324,11 @@ const jsonEN = {
 
 
 const jsonFR = {
-    "_Home": "Page d'accueil",
-    "_About": "Sur moi",
-    "_Portfolio": "Portfolio",
-    "_Contact": "Prendre contact",
-    "_RecentGrad": "diplômé et développeur en herbe",
+    "_Home": "<a href=\"#home\">Page d'accueil</a>",
+    "_About": "<a href=\"#about\">Sur moi</a>",
+    "_Portfolio": "<a href=\"#portfolio\">Portfolio</a>",
+    "_Contact": "<a href=\"#contact\">Prendre contact</a>",
+    "_RecentGrad": "Diplômé et aspirant développeur",
     "_Hello": "Bonjour, je m'appelle",
     "_Name": "Alex Verheecke",
     "_Country" :"et je viens du Luxembourg.",
@@ -362,26 +362,25 @@ document.querySelector('#language').addEventListener("change", function() {
   if (this.value == "🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG") {
     // change all text to ENG
     for (let key in jsonEN) {
-      document.querySelector("#" + key).textContent = jsonEN[key]
-      
+      document.querySelector("#" + key).innerHTML = jsonEN[key]
     }
   } else if (this.value == "🇩🇪 DE") {
     // change all text to DE
     for (let key in jsonDE) {
-      document.querySelector("#" + key).textContent = jsonDE[key]
+      document.querySelector("#" + key).innerHTML = jsonDE[key]
     }
 } else if (this.value == "🇱🇺 LUX") {
-    // change all text to DE
-    for (let key in jsonDE) {
-      document.querySelector("#" + key).textContent = jsonLUX[key]
+    // change all text to LUX
+    for (let key in jsonLUX) {
+      document.querySelector("#" + key).innerHTML = jsonLUX[key]
     }
 } 
-// else if (this.value == "🇫🇷 FR") {
-//     // change all text to DE
-//     for (let key in jsonDE) {
-//       document.querySelector("#" + key + " a").textContent = jsonFR[key]
-//     }
-// }
+else if (this.value == "🇫🇷 FR") {
+    // change all text to FR
+    for (let key in jsonFR) {
+      document.querySelector("#" + key).innerHTML = jsonFR[key]
+    }
+}
 });
     </script>    
     </body>
