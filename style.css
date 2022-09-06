@@ -470,6 +470,11 @@ nav .fa-sharp, nav .fa-solid{
 
     .about-me-text{
         font-size: 14px;
+
+        /* comment out if want to go back to asymmetric about me on mobile */
+        margin-right: -60px;
+
+
     } 
 
     .tab-links{
