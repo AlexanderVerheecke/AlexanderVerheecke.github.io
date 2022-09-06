@@ -442,6 +442,12 @@ nav .fa-sharp, nav .fa-solid{
         cursor: pointer;
     }
 
+    /* comment out for orignal X position */
+    nav ul .fa-solid{
+        margin-left:100px;
+        margin-top:15px;
+    }
+
     /* About Me */
     /* My Work */
     /* Contact Me */
