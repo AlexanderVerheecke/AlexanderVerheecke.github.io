@@ -4,13 +4,13 @@
 <html>
     <head>
         <script defer data-domain="alexverheecke.com" src="https://plausible.io/js/plausible.js"></script>  <!-- to track how many unique visitors -->
-  
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, intitial-scale=1.0">
         <title>Alexander Verheecke</title>
         <link rel="stylesheet" href="style.css">
+        
         <!-- This is the script to fontawseome to get nice icons later -->
         <script src="https://kit.fontawesome.com/d1d65dc915.js" crossorigin="anonymous"></script>
 
@@ -25,18 +25,16 @@
                 <ul id="sidemenu">
                     <li id="_Home"><a href="#header">Home</a> </li>
                     <li id="_About"><a href="#about">About</a> </li>
-                    <!-- <li><a href="#">Services</a> </li> -->
+
                     <li id="_Portfolio"><a href="#portfolio">Portfolio</a> </li>
                     <li id="_Contact"><a href="#contact">Contact</a> </li>
-                    <!-- <li class="LanguageSet"><a href="#">Select Language</a> </li> -->
-                        <select id="language" class="language"> -->
-                        <option>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</option>
-                        <option>🇩🇪 DE</option> 
-                        <option>🇫🇷 FR</option> 
-                        <option>🇱🇺 LUX</option> 
-                    
 
-                    </select>
+                        <select id="language" class="language"> -->
+                            <option>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</option>
+                            <option>🇩🇪 DE</option> 
+                            <option>🇫🇷 FR</option> 
+                            <option>🇱🇺 LUX</option> 
+                        </select>
                     <li class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
                     
                 </ul>
@@ -58,15 +56,18 @@
                     </div>
                     <div class="about-col-2">
                         <h1 id="_about-me" class="about-me">About Me</h1>
-                        <p id="_about-me-text" class="about-me-text"> I moved from Luxembourg to England in 2018 to pursue an undergraduate degree in English Language and Linguistics. 
+                        <p id="_about-me-text" class="about-me-text"> 
+                            I moved from Luxembourg to England in 2018 to pursue an undergraduate degree in English Language and Linguistics. 
                             During the lockdown in March 2020, I began my programming journey with the University of Helsinki's Java Programming MOOC.
                             After graduating, I continued my education at the University of Birmingham and undertook a postgraduate Computer Science course. 
-                            I conducted my final postgraduate research project on the influence of machine translation on sentiment. I am now actively searching for a job in Software Development in England.
+                            I conducted my final postgraduate research project on the influence of machine translation on sentiment. 
+                            I am now actively searching for a job in Software Development in Leeds.
+                            As I have a Luxembourgish and British dual citizenship, I am not required to have a work visa in the UK.
                         </p>
                         <div class="tab-titles">
-<!-- onclick event makes it so that an event happens when the user clicks. Currently Education automatically shown.
-When another section is clicked, that section will be shown.
-Function: onclick="opentab('ID of tab')"" -->
+                    <!-- onclick event makes it so that an event happens when the user clicks. Currently Education automatically shown.
+                    When another section is clicked, that section will be shown.
+                    Function: onclick="opentab('ID of tab')"" -->
 
                             <p id="_Education" class="tab-links active-link" onclick="opentab('Education')">Education</p>
                             <p id="_Skills" class="tab-links" onclick="opentab('Other')" >Skills</p>
